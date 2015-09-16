@@ -1,11 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  json1: MyString
-  json2: MyString
-  category: MyString
+  enirodata: MyString
+  orgnr: 1
 
 two:
-  json1: MyString
-  json2: MyString
-  category: MyString
+  enirodata: MyString
+  orgnr: 1
