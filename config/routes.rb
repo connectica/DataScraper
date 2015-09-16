@@ -7,8 +7,9 @@ Rails.application.routes.draw do
 
   get 'firms/:id' => 'firms#json1'
   get 'firms/json2'
+  get 'scan/:id' => 'firms#scan'
+  get 'scan/' => 'firms#scan'
 
-  get 'firms/scan'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
