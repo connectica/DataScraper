@@ -11,6 +11,11 @@ Rails.application.routes.draw do
   get 'scan/' => 'firms#scan'
 
 
+  get 'eniroscan/:id' => 'firms#eniroscan'
+  get 'eniroscan/' => 'firms#eniroscan'
+
+  
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

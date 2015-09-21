@@ -11,10 +11,10 @@ class Opplysningen1881Worker
 		unless json['suggestedType'] == "UNKNOWN"
 			external_id = json['companyHits'][0]['hits'][0]['resultId']
 
-			#Get company details 
-			url = "http://1881dm.giantleap.no/dmserver/api/v1/search/details/#{external_id}?client-id=64E05B54-749B-452A-8292-74BC92E16EC9"
-		  	response = HTTParty.get(url)
-			json = JSON.parse(response.body)
+			#Get company financial details 
+#			url = "http://1881dm.giantleap.no/dmserver/api/v1/search/details/#{external_id}?client-id=64E05B54-749B-452A-8292-74BC92E16EC9"
+#		  	response = HTTParty.get(url)
+#			json = JSON.parse(response.body)
 
 			#store data
 			firmnavn =  json['juridical']['properties'][0]['value']
